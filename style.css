@@ -156,6 +156,10 @@ body.night,
 .night .widget_wpcom_social_media_icons_widget li a:active {
 	color: var(--highlight-color);
 }
+.night #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+.night #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+	opacity: 1;
+}
 .night .button,
 .night .more-link,
 .night a.more-link,
