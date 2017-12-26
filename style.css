@@ -1,0 +1,207 @@
+/*
+Theme Name: Independent Publisher 2 Plus
+Theme URI: https://github.com/danielwrobert/independent-publisher-2-plus
+Author: Dan Robert
+Author URI: https://dwr.io
+Template: independent-publisher-2
+Description: A child theme for Independent Publisher 2. Adds alternate color scheme day/night toggle.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: independent-publisher-2-plus
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* :root {
+	--background-color: #2d3238;
+	--text-color: #F9FFEE;
+	--meta-text-color: #a3a3a3;
+	--header-color: #EFBB35;
+	--highlight-color: #F59BAC;
+	--highlight-color-alt: #00aced;
+	--background-color: #2d3238;
+	--border-color: #FAE042;
+	--button-color: #222831;
+	--button-color: #767676;
+	--dark-shadow-color: #404139;
+} */
+
+body.night {
+	--background-color: #2d3238;
+	--text-color: #F9FFEE;
+	--meta-text-color: #a3a3a3;
+	--header-color: #EFBB35;
+	--highlight-color: #F59BAC;
+	--highlight-color-alt: #00aced;
+	--background-color: #2d3238;
+	--border-color: #FAE042;
+	--button-color: #222831;
+	--button-color: #767676;
+	--dark-shadow-color: #404139;
+	background-color: var(--background-color);
+}
+.site-description {
+	font-style: italic;
+}
+body.night,
+.night button,
+.night input,
+.night select,
+.night textarea,
+.night .widget_recent_comments a,
+.night .widget_recent_entries a {
+	color: var(--text-color);
+}
+.night h1,
+.night h2,
+.night h3,
+.night h4,
+.night h5,
+.night h6,
+.night .page-header:not(.page-header-light) h1,
+.night .entry-author .author-title,
+.night .entry-title,
+.night .entry-title a,
+.night .entry-title a:visited,
+.night .site-posted-on strong,
+.night .site-title,
+.night .site-title a,
+.night .site-title a:visited,
+.night .entry-title a:hover,
+.night .site-title a:hover,
+.night .comment .comment-meta .comment-author .fn {
+	color: var(--header-color);
+}
+.night .site-title a {
+	color: var(--header-color) !important;
+}
+.night .site-description,
+.night .social-navigation li a,
+.night .site-header .menu-toggle {
+	color: var(--text-color) !important;
+}
+.night a,
+.night a:visited,
+.night .comment .comment-meta .comment-metadata a:hover,
+.night .comment-form span.required,
+.night .pingback:before,
+.night .post-details a:hover,
+.night .post-edit-link a:active,
+.night .post-edit-link a:focus,
+.night .post-edit-link a:hover,
+.night .site-info a:hover,
+.night .trackback:before {
+	color: var(--highlight-color);
+}
+.night .widget-area a,
+.night .widget-area a:visited,
+.night .main-navigation a,
+.night .main-navigation a:visited,
+.night .site-info {
+	color: var(--text-color);
+}
+.night .main-navigation li.current-menu-item > a,
+.night .main-navigation li.current_page_item > a {
+	color: var(--highlight-color);
+}
+.night .entry-meta,
+.night .entry-meta a {
+	color: var(--highlight-color);
+}
+.night a:hover,
+.night a:focus,
+.night a:active,
+.night .entry-meta a:hover {
+	color: var(--highlight-color);
+}
+.night .post-tags li a,
+.night .entry-footer {
+	color: var(--highlight-color);
+}
+.night .post-tags li:first-child {
+	color: var(--header-color);
+}
+.night .post-tags a:hover {
+	color: var(--highlight-color);
+}
+.night .post-tags > li > a:hover {
+	text-decoration: underline;
+}
+.night .site-posted-on time,
+.night .site-posted-on strong{
+	color: var(--text-color);
+}
+.night .comment-form label {
+	color: var(--header-color);
+}
+.night .post-navigation .nav-links a {
+	color: var(--highlight-color);
+}
+.night .post-navigation .nav-links a:hover,
+.night .post-navigation .nav-links a:focus,
+.night .post-navigation .nav-links a:active {
+	color: var(--highlight-color);
+	text-decoration: underline;
+}
+.night .jetpack-social-navigation li a,
+.night .widget_wpcom_social_media_icons_widget li a,
+.night .jetpack-social-navigation li a:hover,
+.night .widget_wpcom_social_media_icons_widget li a:hover,
+.night .jetpack-social-navigation li a:focus,
+.night .widget_wpcom_social_media_icons_widget li a:focus,
+.night .jetpack-social-navigation li a:active,
+.night .widget_wpcom_social_media_icons_widget li a:active {
+	color: var(--highlight-color);
+}
+.night .button,
+.night .more-link,
+.night a.more-link,
+.night button:not(.menu-toggle),
+.night input[type="button"],
+.night input[type="reset"],
+.night input[type="submit"],
+.night .posts-navigation .nav-links a,
+.night #content #infinite-handle span button {
+	background: var(--button-color);
+	color: var(--text-color);
+}
+.night .button:hover,
+.night .more-link:hover,
+.night button:not(.menu-toggle):hover,
+.night input[type="button"]:hover,
+.night input[type="reset"]:hover,
+.night input[type="submit"]:hover,
+.night .posts-navigation .nav-links a:hover,
+	#content #infinite-handle span button:hover {
+	opacity: 0.8;
+}
+.night blockquote,
+.night input[type=email]:focus,
+.night input[type=password]:focus,
+.night input[type=search]:focus,
+.night input[type=text]:focus,
+.night input[type=url]:focus,
+.night textarea:focus,
+.night .comment-form input[type=email]:active,
+.night .comment-form input[type=email]:focus,
+.night .comment-form input[type=password]:active,
+.night .comment-form input[type=password]:focus,
+.night .comment-form input[type=search]:active,
+.night .comment-form input[type=search]:focus,
+.night .comment-form input[type=text]:active,
+.night .comment-form input[type=text]:focus,
+.night .comment-form input[type=url]:active,
+.night .comment-form input[type=url]:focus,
+.night .comment-form textarea:active,
+.night .comment-form textarea:focus {
+	border-color: var(--border-color);
+}
+.night p > code,
+.night p > kbd,
+.night p > tt,
+.night p > var {
+	background: var(--dark-shadow-color);
+}
