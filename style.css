@@ -15,19 +15,9 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* :root {
-	--background-color: #2d3238;
-	--text-color: #F9FFEE;
-	--meta-text-color: #a3a3a3;
-	--header-color: #EFBB35;
-	--highlight-color: #F59BAC;
-	--highlight-color-alt: #00aced;
-	--background-color: #2d3238;
-	--border-color: #FAE042;
-	--button-color: #222831;
-	--button-color: #767676;
-	--dark-shadow-color: #404139;
-} */
+:root {
+	--code-block-color: #f5f5f5;
+}
 
 body.night {
 	--background-color: #2d3238;
@@ -41,6 +31,7 @@ body.night {
 	--button-color: #222831;
 	--button-color: #767676;
 	--dark-shadow-color: #404139;
+	--code-block-color: #fdf6e3;
 	background-color: var(--background-color);
 }
 .site-description {
@@ -208,4 +199,10 @@ body.night,
 .night p > tt,
 .night p > var {
 	background: var(--dark-shadow-color);
+}
+.site-content pre {
+	background: var(--code-block-color);
+}
+.night pre {
+	color: var(--background-color);
 }
