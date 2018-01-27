@@ -197,7 +197,11 @@ body.night,
 .night p > code,
 .night p > kbd,
 .night p > tt,
-.night p > var {
+.night p > var,
+.night li > code,
+.night li > kbd,
+.night li > tt,
+.night li > var {
 	background: var(--dark-shadow-color);
 }
 .site-content pre {
