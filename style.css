@@ -19,15 +19,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	--code-block-color: #f5f5f5;
 }
 
-body.night {
+body:not(.original) {
 	--background-color: #2d3238;
-	--text-color: #F9FFEE;
+	--text-color: #f9ffee;
 	--meta-text-color: #a3a3a3;
-	--header-color: #EFBB35;
-	--highlight-color: #F59BAC;
+	--header-color: #efbb35;
+	--highlight-color: #f59bac;
 	--highlight-color-alt: #00aced;
 	--background-color: #2d3238;
-	--border-color: #FAE042;
+	--border-color: #fae042;
 	--button-color: #222831;
 	--button-color: #767676;
 	--dark-shadow-color: #404139;
@@ -37,176 +37,184 @@ body.night {
 .site-description {
 	font-style: italic;
 }
-body.night,
-.night button,
-.night input,
-.night select,
-.night textarea,
-.night .widget_recent_comments a,
-.night .widget_recent_entries a {
+body:not(.original),
+:not(.original) button,
+:not(.original) input,
+:not(.original) select,
+:not(.original) textarea,
+:not(.original) .widget_recent_comments a,
+:not(.original) .widget_recent_entries a {
 	color: var(--text-color);
 }
-.night h1,
-.night h2,
-.night h3,
-.night h4,
-.night h5,
-.night h6,
-.night .page-header:not(.page-header-light) h1,
-.night .entry-author .author-title,
-.night .entry-title,
-.night .entry-title a,
-.night .entry-title a:visited,
-.night .site-posted-on strong,
-.night .site-title,
-.night .site-title a,
-.night .site-title a:visited,
-.night .entry-title a:hover,
-.night .site-title a:hover,
-.night .comment .comment-meta .comment-author .fn {
+:not(.original) h1,
+:not(.original) h2,
+:not(.original) h3,
+:not(.original) h4,
+:not(.original) h5,
+:not(.original) h6,
+:not(.original) .page-header:not(.page-header-light) h1,
+:not(.original) .entry-author .author-title,
+:not(.original) .entry-title,
+:not(.original) .entry-title a,
+:not(.original) .entry-title a:visited,
+:not(.original) .site-posted-on strong,
+:not(.original) .site-title,
+:not(.original) .site-title a,
+:not(.original) .site-title a:visited,
+:not(.original) .entry-title a:hover,
+:not(.original) .site-title a:hover,
+:not(.original) .comment .comment-meta .comment-author .fn {
 	color: var(--header-color);
 }
-.night .site-title a {
+:not(.original) .site-title a {
 	color: var(--header-color) !important;
 }
-.night .site-description,
-.night .social-navigation li a,
-.night .site-header .menu-toggle {
+:not(.original) .site-description,
+:not(.original) .social-navigation li a,
+:not(.original) .site-header .menu-toggle {
 	color: var(--text-color) !important;
 }
-.night a,
-.night a:visited,
-.night .comment .comment-meta .comment-metadata a:hover,
-.night .comment-form span.required,
-.night .pingback:before,
-.night .post-details a:hover,
-.night .post-edit-link a:active,
-.night .post-edit-link a:focus,
-.night .post-edit-link a:hover,
-.night .site-info a:hover,
-.night .trackback:before {
+:not(.original) a,
+:not(.original) a:visited,
+:not(.original) .comment .comment-meta .comment-metadata a:hover,
+:not(.original) .comment-form span.required,
+:not(.original) .pingback:before,
+:not(.original) .post-details a:hover,
+:not(.original) .post-edit-link a:active,
+:not(.original) .post-edit-link a:focus,
+:not(.original) .post-edit-link a:hover,
+:not(.original) .site-info a:hover,
+:not(.original) .trackback:before {
 	color: var(--highlight-color);
 }
-.night .widget-area a,
-.night .widget-area a:visited,
-.night .main-navigation a,
-.night .main-navigation a:visited,
-.night .site-info {
+:not(.original) .widget-area a,
+:not(.original) .widget-area a:visited,
+:not(.original) .main-navigation a,
+:not(.original) .main-navigation a:visited,
+:not(.original) .site-info {
 	color: var(--text-color);
 }
-.night .main-navigation li.current-menu-item > a,
-.night .main-navigation li.current_page_item > a {
+:not(.original) .main-navigation li.current-menu-item > a,
+:not(.original) .main-navigation li.current_page_item > a {
 	color: var(--highlight-color);
 }
-.night .entry-meta,
-.night .entry-meta a {
+:not(.original) .entry-meta,
+:not(.original) .entry-meta a {
 	color: var(--highlight-color);
 }
-.night a:hover,
-.night a:focus,
-.night a:active,
-.night .entry-meta a:hover {
+:not(.original) a:hover,
+:not(.original) a:focus,
+:not(.original) a:active,
+:not(.original) .entry-meta a:hover {
 	color: var(--highlight-color);
 }
-.night .post-tags li a,
-.night .entry-footer {
+:not(.original) .post-tags li a,
+:not(.original) .entry-footer {
 	color: var(--highlight-color);
 }
-.night .post-tags li:first-child {
+:not(.original) .post-tags li:first-child {
 	color: var(--header-color);
 }
-.night .post-tags a:hover {
+:not(.original) .post-tags a:hover {
 	color: var(--highlight-color);
 }
-.night .post-tags > li > a:hover {
+:not(.original) .post-tags > li > a:hover {
 	text-decoration: underline;
 }
-.night .site-posted-on time,
-.night .site-posted-on strong{
+:not(.original) .site-posted-on time,
+:not(.original) .site-posted-on strong {
 	color: var(--text-color);
 }
-.night .comment-form label {
+:not(.original) .comment-form label {
 	color: var(--header-color);
 }
-.night .post-navigation .nav-links a {
+:not(.original) .post-navigation .nav-links a {
 	color: var(--highlight-color);
 }
-.night .post-navigation .nav-links a:hover,
-.night .post-navigation .nav-links a:focus,
-.night .post-navigation .nav-links a:active {
+:not(.original) .post-navigation .nav-links a:hover,
+:not(.original) .post-navigation .nav-links a:focus,
+:not(.original) .post-navigation .nav-links a:active {
 	color: var(--highlight-color);
 	text-decoration: underline;
 }
-.night .jetpack-social-navigation li a,
-.night .widget_wpcom_social_media_icons_widget li a,
-.night .jetpack-social-navigation li a:hover,
-.night .widget_wpcom_social_media_icons_widget li a:hover,
-.night .jetpack-social-navigation li a:focus,
-.night .widget_wpcom_social_media_icons_widget li a:focus,
-.night .jetpack-social-navigation li a:active,
-.night .widget_wpcom_social_media_icons_widget li a:active {
+:not(.original) .jetpack-social-navigation li a,
+:not(.original) .widget_wpcom_social_media_icons_widget li a,
+:not(.original) .jetpack-social-navigation li a:hover,
+:not(.original) .widget_wpcom_social_media_icons_widget li a:hover,
+:not(.original) .jetpack-social-navigation li a:focus,
+:not(.original) .widget_wpcom_social_media_icons_widget li a:focus,
+:not(.original) .jetpack-social-navigation li a:active,
+:not(.original) .widget_wpcom_social_media_icons_widget li a:active {
 	color: var(--highlight-color);
 }
-.night #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
-.night #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+:not(.original)
+	#jp-relatedposts
+	.jp-relatedposts-items
+	.jp-relatedposts-post
+	.jp-relatedposts-post-context,
+:not(.original)
+	#jp-relatedposts
+	.jp-relatedposts-items
+	.jp-relatedposts-post
+	.jp-relatedposts-post-date {
 	opacity: 1;
 }
-.night .button,
-.night .more-link,
-.night a.more-link,
-.night button:not(.menu-toggle),
-.night input[type="button"],
-.night input[type="reset"],
-.night input[type="submit"],
-.night .posts-navigation .nav-links a,
-.night #content #infinite-handle span button {
+:not(.original) .button,
+:not(.original) .more-link,
+:not(.original) a.more-link,
+:not(.original) button:not(.menu-toggle),
+:not(.original) input[type='button'],
+:not(.original) input[type='reset'],
+:not(.original) input[type='submit'],
+:not(.original) .posts-navigation .nav-links a,
+:not(.original) #content #infinite-handle span button {
 	background: var(--button-color);
 	color: var(--text-color);
 }
-.night .button:hover,
-.night .more-link:hover,
-.night button:not(.menu-toggle):hover,
-.night input[type="button"]:hover,
-.night input[type="reset"]:hover,
-.night input[type="submit"]:hover,
-.night .posts-navigation .nav-links a:hover,
-	#content #infinite-handle span button:hover {
+:not(.original) .button:hover,
+:not(.original) .more-link:hover,
+:not(.original) button:not(.menu-toggle):hover,
+:not(.original) input[type='button']:hover,
+:not(.original) input[type='reset']:hover,
+:not(.original) input[type='submit']:hover,
+:not(.original) .posts-navigation .nav-links a:hover,
+#content #infinite-handle span button:hover {
 	opacity: 0.8;
 }
-.night blockquote,
-.night input[type=email]:focus,
-.night input[type=password]:focus,
-.night input[type=search]:focus,
-.night input[type=text]:focus,
-.night input[type=url]:focus,
-.night textarea:focus,
-.night .comment-form input[type=email]:active,
-.night .comment-form input[type=email]:focus,
-.night .comment-form input[type=password]:active,
-.night .comment-form input[type=password]:focus,
-.night .comment-form input[type=search]:active,
-.night .comment-form input[type=search]:focus,
-.night .comment-form input[type=text]:active,
-.night .comment-form input[type=text]:focus,
-.night .comment-form input[type=url]:active,
-.night .comment-form input[type=url]:focus,
-.night .comment-form textarea:active,
-.night .comment-form textarea:focus {
+:not(.original) blockquote,
+:not(.original) input[type='email']:focus,
+:not(.original) input[type='password']:focus,
+:not(.original) input[type='search']:focus,
+:not(.original) input[type='text']:focus,
+:not(.original) input[type='url']:focus,
+:not(.original) textarea:focus,
+:not(.original) .comment-form input[type='email']:active,
+:not(.original) .comment-form input[type='email']:focus,
+:not(.original) .comment-form input[type='password']:active,
+:not(.original) .comment-form input[type='password']:focus,
+:not(.original) .comment-form input[type='search']:active,
+:not(.original) .comment-form input[type='search']:focus,
+:not(.original) .comment-form input[type='text']:active,
+:not(.original) .comment-form input[type='text']:focus,
+:not(.original) .comment-form input[type='url']:active,
+:not(.original) .comment-form input[type='url']:focus,
+:not(.original) .comment-form textarea:active,
+:not(.original) .comment-form textarea:focus {
 	border-color: var(--border-color);
 }
-.night p > code,
-.night p > kbd,
-.night p > tt,
-.night p > var,
-.night li > code,
-.night li > kbd,
-.night li > tt,
-.night li > var {
+:not(.original) p > code,
+:not(.original) p > kbd,
+:not(.original) p > tt,
+:not(.original) p > var,
+:not(.original) li > code,
+:not(.original) li > kbd,
+:not(.original) li > tt,
+:not(.original) li > var {
 	background: var(--dark-shadow-color);
 }
 .site-content pre {
 	background: var(--code-block-color);
 }
-.night pre {
+:not(.original) pre {
 	color: var(--background-color);
 }
